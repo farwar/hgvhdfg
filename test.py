@@ -13,7 +13,7 @@ def setup():
 def draw():
     global bx,by,bys,bxs,ry,rx,rxs,rys,x
     fill(0,255,0)
-    rect(5,100,595,400)
+    rect(5,100,590,400)
     line(300,100,300,500)
     line(5,300,595,300)
     triangle(275,100,325,100,300,125)
