@@ -26,7 +26,7 @@ def draw():
         if key == 'l' and rx<=396:
             rx+=5
     fill(255,0,0)
-    rect(20,ry,10,100)
+    rect(10,ry,10,100)
     if keyPressed:
         if key == 'w' and ry>=104:
             ry-=5
@@ -38,12 +38,21 @@ def draw():
           if key == 'p':
               bxs=-3
               bys=3
+          if key == 'i':
+              bxs=-3
+              bys=-3
+          if key == 'q':
+              bxs=3
+              bys=3
+          if key == 'e':
+              bxs=3
+              bys=-3
           if key == 'c':
               bxs=0
               bys=0
     bx+=bxs
     by+=bys
-    if bx<=18:
+    if bx<=2:
         bxs=-bxs
     if by>=485:
         bys=-bys
@@ -51,20 +60,17 @@ def draw():
         bys=-bys
     if bx>=600:
         bxs=-bxs
-    if bx<=40 and by>=ry and by<=ry+100:
+    if bx<=30 and by>=ry and by<=ry+100:
         bxs=-bxs
     if bx>=574 and by>=rx and by<=rx+100:
         bxs=-bxs
-        bys=-bys
-    if bx<=5:
+    if bx<=12:
         bxs=0
         bys=0
-        bx=width/2
-        by=height/2
-    if bx>=595:
+        bx=50
+        by=300
+    if bx>=588:
         bxs=0
         bys=0
-        bx=width/2
-        by=height/2
-        
-
+        bx=550
+        by=300
