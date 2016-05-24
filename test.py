@@ -14,11 +14,12 @@ be4=10
 be5=10
 be6=10
 m=0
+z=0
 def setup():
     global bx,bx
     size(600,600)
 def draw():
-    global bx,by,bys,bxs,ry,rx,rxs,rys,x,be6,be5,be4,be3,be2,be1,m
+    global bx,by,bys,bxs,ry,rx,rxs,rys,x,be6,be5,be4,be3,be2,be1,m,z
     fill(0,0,0)
     rect(0,0,800,800)
     fill(0,255,0)
@@ -101,10 +102,10 @@ def draw():
     if m == 3:
         be3=-10
     if bx>=583:
-        m+=1
-    if m == 1:
+        z+=1
+    if z == 1:
         be4=-10
-    if m == 2:
+    if z == 2:
         be5=-10
-    if m == 3:
+    if z == 3:
         be6=-10
