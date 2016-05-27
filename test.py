@@ -45,22 +45,22 @@ def draw():
     fill(255,254,0)
     ellipse(bx,by,15,15)
     if keyPressed:
-          if key == 'p' and bx>width/2:
+        if key == 'p' and bx>width/2:
               bxs=-3
               bys=3
-          if key == 'i' and bx>width/2:
+        if key == 'i' and bx>width/2:
               bxs=-3
               bys=-3
-          if key == 'q' and bx<width/2:               
+        if key == 'q' and bx<width/2:               
               bxs=3
               bys=3
-          if key == 'e' and bx<width/2 :
+        if key == 'e' and bx<width/2 :
               bxs=3
               bys=-3
-          if key == 'c':
+        if key == 'c':
               bxs=0
               bys=0
-          if key == 'g':
+        if key == 'g':
               bxs=-3
               bys=3
     bx+=bxs
@@ -101,11 +101,58 @@ def draw():
         be2=-10
     if m == 3:
         be3=-10
-    if bx>=583:
-        z+=1
+    if bx>=584:
+       z+=1
     if z == 1:
         be4=-10
     if z == 2:
         be5=-10
     if z == 3:
         be6=-10
+    if z == 3 or m == 3:
+        fill(0,0,0)
+        rect(0,0,600,600)
+        fill(255,0,0)
+        rect(50,50,70,10)
+        rect(50,60,10,150)
+        rect(50,200,100,10)
+        rect(140,140,10,60)
+        rect(110,140,30,10)
+        rect(300,50,10,170)
+        rect(210,50,90,10)
+        rect(200,50,10,170)
+        rect(210,150,90,10)
+        rect(330,50,10,170)
+        rect(380,50,10,170)
+        rect(430,50,10,170)
+        rect(330,50,110,10)
+        rect(500,50,10,170)
+        rect(500,50,60,10)
+        rect(500,135,60,10)
+        rect(500,210,60,10)
+        rect(50,300,10,170)
+        rect(120,300,10,170)
+        rect(50,300,80,10)
+        rect(50,460,80,10)
+        rect(170,300,10,85)
+        rect(175,385,10,60)
+        rect(190,460,30,10)
+        rect(230,300,10,85)
+        rect(225,385,10,60)
+        rect(220,445,10,25)
+        rect(180,445,10,25)
+        rect(270,300,10,170)
+        rect(270,300,60,10)
+        rect(270,385,60,10)
+        rect(270,460,60,10)
+        rect(370,300,60,10)
+        rect(430,310,10,70)
+        rect(370,300,10,170)
+        rect(380,380,50,10)
+        rect(380,390,20,10)
+        rect(400,400,10,30)
+        rect(410,430,20,10)
+        rect(430,440,10,30)
+            
+        
+        
