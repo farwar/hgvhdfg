@@ -82,27 +82,25 @@ def draw():
         bys=0
         bx=50
         by=300
+        m+=1
     if bx>=588:
         bxs=0
         bys=0
         bx=550
         by=300
+        z+=1
     rect(10,be1,10,10)
     rect(22,be2,10,10)
     rect(34,be3,10,10)
     rect(580,be4,10,10)
     rect(568,be5,10,10)
     rect(556,be6,10,10)
-    if bx<=15:
-        m+=1
     if m == 1:
         be1=-10
     if m == 2:
         be2=-10
     if m == 3:
         be3=-10
-    if bx>=584:
-       z+=1
     if z == 1:
         be4=-10
     if z == 2:
